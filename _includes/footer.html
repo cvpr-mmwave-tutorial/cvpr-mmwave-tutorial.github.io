@@ -1,0 +1,33 @@
+<!-- Footer -->
+<footer class="footer" id="footer" style="background-color: black; padding: 60px 60px">
+  <div class="container" style="color: white; align-items: center; display: flex; justify-content: space-between;">
+
+
+    <div style="text-align: left;">
+      CVPR 2026 Tutorial: Bringing Computer Vision to Hidden Objects
+  </div>
+
+  <div style=" text-align: right;">
+    Contact Us: 
+    <a href="mailto:ldodds@mit.edu">ldodds@mit.edu</a>
+  </div>
+    
+    <!-- Contact Us: 
+    <a href="mailto:ldodds@mit.edu">ldodds@mit.edu</a> -->
+    </div>
+</footer>
+{% if page.layout == "page" %}
+<script>
+  fixPageShort();
+  function fixPageShort() {
+    if (window.innerHeight > document.body.offsetHeight) {
+      document.getElementById("footer").style.position = "fixed";
+      document.getElementById("footer").style.bottom = 0;
+      document.getElementById("footer").style.right = 0;
+      document.getElementById("footer").style.left = 0;
+      document.getElementById("footer").style.width = "100%";
+    }
+  }
+</script>
+{% endif %}
+<!-- End Footer -->

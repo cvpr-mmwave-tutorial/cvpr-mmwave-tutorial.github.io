@@ -1,0 +1,94 @@
+<!-- Organizers -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section" id="{{ site.data.sitetext[site.locale].organizers.section | default: "organizers" }}">
+<div class="container">
+  <div class="row">
+	<div class="col-lg-12 text-center">
+	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].organizers.title }}</h2>
+	  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].organizers.text }}</h3>
+	</div>
+  </div>
+  <div class="row d-flex justify-content-center">
+  {% for person in site.data.sitetext[site.locale].organizers.people %}
+	<div class="col-sm-4">
+	  <div class="team-member">
+		<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+		<h4>{{ person.name }}</h4>
+		<p class="text-muted" style="margin-bottom:0;">{{ person.role }}</p>
+		<p class="text-muted" style="margin-bottom:0;">{{ person.affiliation }}</p>
+		<ul class="list-inline social-buttons">
+		{% for network in person.social %}
+		  <li class="list-inline-item">
+			<a href="{{ network.url }}" style="width:60px;height:60px;border-radius:50%;background:#1c1c1c;
+            color:white;display:flex;align-items:center;justify-content:center;
+            text-decoration:none;transform:translateY({{ network.button_offset }}px)" >
+			  <i class="{{ network.icon }}" style="transform:translateY({{ network.offset }}px)"></i>
+			</a>
+              <!-- <button
+                onclick="window.location.href='{{ network.url }}'"
+                style="
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
+                    border:none;
+                    padding:0;
+                    background-color:#1c1c1c;
+                    cursor:pointer;
+                    background:url('{{ network.icon }}');
+                    background-size:cover;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                ">
+                </button> -->
+		  </li>
+		{% endfor %}
+		</ul>
+	  </div>
+	</div>
+  {% endfor %}
+  </div>
+  <div class="row">
+	<div class="col-lg-8 mx-auto text-center">
+	  <div class="large text-muted">{{ site.data.sitetext[site.locale].organizers.subtext | markdownify }}</div>
+	</div>
+  </div>
+</div>
+</section>
+{% else %}
+<section class="page-section" id="{{ site.data.sitetext.organizers.organizers | default: "organizers" }}">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12 text-center">
+		  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.organizers.title }}</h2>
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext.organizers.text }}</h3>
+		</div>
+	  </div>
+	  <div class="row d-flex justify-content-center">
+	  {% for person in site.data.sitetext.organizers.people %}
+		<div class="col-sm-4">
+		  <div class="team-member">
+			<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+			<h4>{{ person.name }}</h4>
+			<p class="text-muted">{{ person.role }}</p>
+			<ul class="list-inline social-buttons">
+			{% for network in person.social %}
+			  <li class="list-inline-item">
+				<a href="{{ network.url }}">
+				  <i class="{{ network.icon }}"></i>
+				</a>
+			  </li>
+			{% endfor %}
+			</ul>
+		  </div>
+		</div>
+	  {% endfor %}
+	  </div>
+	  <div class="row">
+		<div class="col-lg-8 mx-auto text-center">
+		  <div class="large text-muted">{{ site.data.sitetext.organizers.subtext | markdownify }}</div>
+		</div>
+	  </div>
+	</div>
+</section>
+{% endif %}
+<!-- End Organizers -->

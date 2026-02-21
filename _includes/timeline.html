@@ -1,0 +1,124 @@
+<!-- timeline -->
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].timeline.section | default: "timeline" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].timeline.title | markdownify | default: "Timeline" }}</h2>
+          <!-- <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].timeline.text | default: "timeline"}}</h3> -->
+        </div>
+      </div>
+
+      <table>
+        <tr>
+            <th width="20%">Time</th>
+            <th>Details</th>
+        </tr>
+    
+        <tr>
+            <td>8:00 - 8:15 AM</td>
+            <td>
+                <span class="main-title">Introduction</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>8:15 - 9:15 AM</td>
+            <td>
+                <span class="main-title">Basics of Millimeter-Wave Signals</span>
+                <span class="sub-title">How They Differ From Visible Light and What They Can Do</span>
+                We will start by covering various applications of mmWave sensing, fundamental properties of mmWave signals, classical imaging approaches and limitations of these approaches.
+              </td>
+        </tr>
+
+
+        <tr>
+          <td>9:15 - 10:00 AM</td>
+          <td>
+              <span class="main-title">Advanced Through-Occlusion Object Reconstruction</span>
+              <span class="sub-title">Using Surface Normal Estimates for Through-Occlusion 3D Object Reconstruction and Completion</span>
+              Next, we will discuss a recent state-of-the-art mmWave reconstruction method, including how it opens many exciting directions for future work. 
+          </td>
+      </tr>
+
+
+      <tr>
+        <td>10:00 - 10:15 AM</td>
+        <td>
+            <span class="main-title">Coffee Break</span>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>10:15 - 11:00 AM</td>
+      <td>
+          <span class="main-title">Enabling Visual-Quality Scene Understanding in Poor Visibility</span>
+          <!-- <span class="sub-title">Using Millimeter-Waves</span> -->
+          We will discuss how mmWave signals can be used to reconstruct lidar-like scenes in poor visibility, and how this can be used to enable safer autonomous vehicles.
+      </td>
+  </tr>
+
+
+  <tr>
+    <td>11:00 - 11:45 AM</td>
+    <td>
+        <span class="main-title">How to Begin Millimeter-Wave Research</span>
+        <span class="sub-title">A Tour of Existing Datasets, Tools, and Open Problems</span>
+        We will conclue by discussing how researchers can start research with mmWave signals, discussing existing datasets, benchmarks, and tools they can use to get started. 
+        This will include a hands-on demonstration for setting up and using this tool.
+        We will also discuss several different open problems in the field that researchers can begin . 
+        
+    </td>
+</tr>
+    </table>
+      <!-- <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+      {%- assign align = site.data.sitetext[site.locale].timeline.start_align -%}
+      {%- for event in site.data.sitetext[site.locale].timeline.events -%}
+            {%- if align == "right" -%}
+              {%- if event.align and event.align == "left" -%}
+                {%- assign align = "right" -%}
+                <li>
+              {%- else -%}
+                {%- assign align = "left" %}
+                <li class="timeline-inverted">
+              {% endif %}
+            {% else %}
+              {%- if event.align and event.align == "right" -%}
+                {%- assign align = "left" -%}
+                <li class="timeline-inverted">
+              {%- else -%}
+                {%- assign align = "right" %}
+                <li>
+              {% endif %}
+            {%- endif -%}
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ event.year | markdownify }}</h4>
+                  <h4 class="subheading">{{ event.title }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <div class="text-muted">{{ event.desc | markdownify }}</div>
+                </div>
+              </div>
+            </li>
+		  {% endfor %}	 -->
+            
+		  <!-- {% if site.data.sitetext[site.locale].timeline.end %}	
+			<li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>{{ site.data.sitetext[site.locale].timeline.end }}</h4>
+              </div>
+            </li>
+		  {% endif %} -->
+
+          <!-- </ul>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End timeline -->

@@ -1,0 +1,55 @@
+<!-- Introduction -->
+  <section class="page-section" id="{{ site.data.sitetext[site.locale].introduction.section | default: "Introduction" }}">
+    <div class="container">
+	
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].introduction.title | default: "Introduction" }}</h2>
+          {% if site.data.sitetext[site.locale].introduction.text %}
+		  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].introduction.text }}</h3>
+		  {% endif %}
+        </div>
+      </div>
+	  
+
+      <div class="row text-center">
+        <p style="text-align: justify;">
+            Millimeter-wave (mmWave) signals, such as those used in 5G, 6G, and next-generation WiFi,  
+            are a unique modality that can travel through many everyday occlusions (e.g. cardboard, fabric, fog, etc), 
+            allowing them to sense objects or scenes that are hidden from view. 
+            This unique capability has sparked recent interest in the computer vision community and beyond for using these 
+            signals to enable novel perception tasks with applications spanning autonomous driving, robotics, shipping and 
+            logistics, and more. The goal of this tutorial is to introduce audience members to this modality, 
+            and equip them with the knowledge needed to begin research in this area. 
+            We will cover both fundamental millimeter-wave imaging concepts, as well as recent, state-of-the-art methods. 
+            We will discuss different applications of millimeter-wave sensing, including a deep-dive into two areas: 
+            through-occlusion 3D object reconstruction, and all-weather scene understanding. We will additionally cover 
+            existing datasets, benchmarks, and tools so that audience members new to this area can begin research in this 
+            field. This tutorial is designed to be accessible for an audience with no prior millimeter-wave experience. 
+            Topics to be covered include:
+            <ul>
+                <li style="text-align: justify;">How millimeter wave signals differ from visible light</li>
+                <li style="text-align: justify;">How millimeter wave signals differ from other through-occlusion modalities (e.g., X-Ray, Ultrasound, etc)</li>
+                <li style="text-align: justify;">Various applications of mmWave sensing, including how they have been used in CV community </li>
+                <li style="text-align: justify;">Classical methods for using mmWave signals to produce a 2D or 3D image</li>
+                <li style="text-align: justify;">Limitations of classical mmWave imaging</li>
+                <li style="text-align: justify;">State-of-the-art methods for using mmWave signals to perform surface normal estimation for 3D object reconstruction</li>
+                <li style="text-align: justify;">State-of-the-art methods for using mmWave signals for complete scene reconstruction, segmentation, and object detection</li>
+                <li style="text-align: justify;">How researchers can get started in this area, including existing datasets, benchmarks, and tools</li>
+            </ul>
+            </p>
+	  {% for service in site.data.sitetext[site.locale].introduction.list %}
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">{{ service.title | markdownify }}</h4>
+          {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
+        </div>
+	  {% endfor %}
+      </div>
+	  
+    </div>
+  </section>
+<!-- End Introduction -->
