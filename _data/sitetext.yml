@@ -70,8 +70,8 @@ en: &DEFAULT_EN
             button_offset: 0
           - url: https://scholar.google.com/citations?user=F5PfbSwAAAAJ&hl=en&oi=ao
             icon: ai ai-google-scholar ai-2x
-            offset: 2
-            button_offset: 6
+            offset: 8
+            button_offset: 7
           - url: https://www.linkedin.com/in/mingmin-zhao-68317884
             icon: fab fa-linkedin-in
             offset: 0
@@ -87,8 +87,8 @@ en: &DEFAULT_EN
             button_offset: 0
           - url: https://scholar.google.com/citations?user=KIgj3WQAAAAJ&hl=en&oi=ao
             icon: ai ai-google-scholar ai-2x
-            offset: 2
-            button_offset: 6
+            offset: 8
+            button_offset: 7
           - url: https://www.linkedin.com/in/laura-dodds-871b4116a/
             icon: fab fa-linkedin-in
             offset: 0
@@ -104,8 +104,8 @@ en: &DEFAULT_EN
             button_offset: 0
           - url: https://scholar.google.com/citations?user=KIgj3WQAAAAJ&hl=en&oi=ao
             icon: ai ai-google-scholar ai-2x
-            offset: 2
-            button_offset: 6
+            offset: 8
+            button_offset: 7
           - url: https://www.linkedin.com/in/laura-dodds-871b4116a/
             icon: fab fa-linkedin-in
             offset: 0
