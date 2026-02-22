@@ -4,15 +4,22 @@
 	
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].introduction.title | default: "Introduction" }}</h2>
+          <h2 class="section-heading text-uppercase" style="padding-bottom: 12px;margin-bottom:12px; padding-top:0px; margin-top:0px;">{{ site.data.sitetext[site.locale].introduction.title | default: "Introduction" }}</h2>
           {% if site.data.sitetext[site.locale].introduction.text %}
-		  <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].introduction.text }}</h3>
+		  <!-- <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].introduction.text }}</h3> -->
 		  {% endif %}
         </div>
       </div>
 	  
 
       <div class="row text-center">
+          <div style="padding-top:0px;padding-bottom:12px;margin-top:0px;margin-bottom:12px;display: flex;justify-content: center;align-items: center;width: 100vw;height: 25vh; overflow: hidden">
+          <video autoplay muted loop playsinline
+                 style="width: 50%; height: auto; display: block; transform: translateY(-0%)">
+            <source src="assets/videos/spoon_cropped.mp4#t=3,17" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <p style="text-align: justify;">
             Millimeter-wave (mmWave) signals, such as those used in 5G, 6G, and next-generation WiFi,  
             are a unique modality that can travel through many everyday occlusions (e.g. cardboard, fabric, fog, etc), 
@@ -38,7 +45,22 @@
                 <li style="text-align: justify;">How researchers can get started in this area, including existing datasets, benchmarks, and tools</li>
             </ul>
             </p>
-	  {% for service in site.data.sitetext[site.locale].introduction.list %}
+
+            See the following videos for a preview on what mmWave signals are capable of!
+            <br></br>
+
+
+            <div style="width: 100%;display: flex;gap: 20px; justify-content: center;flex-wrap: wrap; justify: center;">
+              <div style="flex: 1; position: relative;min-width: 300px;max-width: 600px;height: auto;aspect-ratio: 16 / 9;">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Jsl6mxsdrcQ" title="Reconstructing Hidden Objects with Wireless Signals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+              </div>
+
+            <div style="flex: 1; position: relative;min-width: 300px;max-width: 600px;height: auto;aspect-ratio: 16 / 9;">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dKyQ1XuPorU" title="Giving Robots Superhuman Vision Using Radio Signals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+	  <!-- {% for service in site.data.sitetext[site.locale].introduction.list %}
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -47,7 +69,7 @@
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
           {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %}
         </div>
-	  {% endfor %}
+	  {% endfor %} -->
       </div>
 	  
     </div>
