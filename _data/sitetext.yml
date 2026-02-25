@@ -93,20 +93,20 @@ en: &DEFAULT_EN
             icon: fab fa-linkedin-in
             offset: 0
             button_offset: 0
-      - name: "Laura Dodds"
+      - name: "Hailan Shanbhag"
         role: "PhD Student"
-        affiliation: "Massachusetts Institute of Technology"
-        image: assets/img/team/laura.jpg
+        affiliation: "École Polytechnique Fédérale de Lausanne"
+        image: assets/img/team/hailan.jpg
         social:
-          - url: https://laura-dodds.github.io/
+          - url: https://hailanshanbhag.github.io/
             icon: fas fa-home
             offset: 0
             button_offset: 0
-          - url: https://scholar.google.com/citations?user=KIgj3WQAAAAJ&hl=en&oi=ao
+          - url: https://hailanshanbhag.github.io/
             icon: ai ai-google-scholar ai-2x
             offset: 8
             button_offset: 7
-          - url: https://www.linkedin.com/in/laura-dodds-871b4116a/
+          - url: https://www.linkedin.com/in/hailan-shanbhag/
             icon: fab fa-linkedin-in
             offset: 0
             button_offset: 0
