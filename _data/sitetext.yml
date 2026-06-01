@@ -11,7 +11,7 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title:  Bringing Computer Vision to Hidden Objects
+    title:  Extending Computer Vision to Hidden Objects
     text: A Tutorial on Millimeter-Wave Imaging and Reconstruction of Occluded Scenes
     # button: Tell Me More
     # buttonlink: "#introduction"
