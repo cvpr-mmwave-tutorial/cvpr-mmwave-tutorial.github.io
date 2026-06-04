@@ -20,6 +20,12 @@ en: &DEFAULT_EN
     title: "Introduction"
     text: ""
     section: introduction
+    resources:
+      colab: "https://colab.research.google.com/github/signalkinetics/CVPR_mmWave_Tutorial/blob/main/tutorial.ipynb"
+      github: "https://github.com/signalkinetics/CVPR_mmWave_Tutorial"
+      slides:
+        pdf: "assets/slides/CVPR_Tutorial.pdf"
+        pptx: "assets/slides/CVPR_Tutorial_Compressed.pptx"
 
 
   timeline:

@@ -30,6 +30,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 
 // Components
 @import "components/buttons.scss";
+@import "components/resource-buttons.scss";
 @import "components/navbar.scss";
 @import "components/client-scroll.scss";
 

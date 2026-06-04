@@ -91,6 +91,139 @@ img::-moz-selection {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.resource-buttons-section {
+  padding: 2.5rem 0 1.5rem;
+  background-color: #fff;
+}
+
+.resource-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resource-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.resource-btn:hover, .resource-btn:focus {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.resource-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.resource-btn-icon img {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.resource-btn-colab {
+  background-color: #fff8e6;
+  border-color: #f9ab00;
+  color: #5c4300;
+}
+.resource-btn-colab:hover, .resource-btn-colab:focus {
+  background-color: #ffefb8;
+  color: #3f2e00;
+}
+
+.resource-btn-github {
+  background-color: #24292e;
+  border-color: #24292e;
+  color: #fff;
+}
+.resource-btn-github:hover, .resource-btn-github:focus {
+  background-color: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.resource-slides {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+}
+
+.resource-slides-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem 0.45rem 1rem;
+  color: #343a40;
+  font-weight: 700;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.resource-slides-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.resource-btn-sub {
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+}
+
+.resource-btn-pdf {
+  background-color: #fff;
+  border-color: #c0392b;
+  color: #922b21;
+}
+.resource-btn-pdf .resource-btn-icon {
+  color: #c0392b;
+}
+.resource-btn-pdf:hover, .resource-btn-pdf:focus {
+  background-color: #fdecea;
+  color: #7b241c;
+}
+
+.resource-btn-pptx {
+  background-color: #fff;
+  border-color: #d24726;
+  color: #a3361d;
+}
+.resource-btn-pptx .resource-btn-icon {
+  color: #d24726;
+}
+.resource-btn-pptx:hover, .resource-btn-pptx:focus {
+  background-color: #fff0eb;
+  color: #7f2b18;
+}
+
+@media (max-width: 575px) {
+  .resource-slides {
+    width: 100%;
+    justify-content: center;
+  }
+  .resource-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 #mainNav {
   background-color: #212529;
 }
