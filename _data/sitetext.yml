@@ -66,6 +66,7 @@ en: &DEFAULT_EN
     section: organizers
     people:
       - name: "Mingmin Zhao"
+        title: "Organizer & Speaker"
         role: "Assistant Professor"
         affiliation: "University of Pennsylvania"
         image: assets/img/team/mingmin.png
@@ -83,6 +84,7 @@ en: &DEFAULT_EN
             offset: 0
             button_offset: 0
       - name: "Laura Dodds"
+        title: "Organizer & Speaker"
         role: "PhD Student"
         affiliation: "Massachusetts Institute of Technology"
         image: assets/img/team/laura.jpg
@@ -100,6 +102,7 @@ en: &DEFAULT_EN
             offset: 0
             button_offset: 0
       - name: "Hailan Shanbhag"
+        title: "Speaker"
         role: "PhD Student"
         affiliation: "École Polytechnique Fédérale de Lausanne"
         image: assets/img/team/hailan.jpg
@@ -113,6 +116,24 @@ en: &DEFAULT_EN
             offset: 8
             button_offset: 7
           - url: https://www.linkedin.com/in/hailan-shanbhag/
+            icon: fab fa-linkedin-in
+            offset: 0
+            button_offset: 0
+      - name: "Jiachen Lu"
+        title: "Speaker"
+        role: "PhD Student"
+        affiliation: "École Polytechnique Fédérale de Lausanne"
+        image: assets/img/team/Jiachen.jpg
+        social:
+          - url: https://jiachenlu.com/
+            icon: fas fa-home
+            offset: 0
+            button_offset: 0
+          - url: https://scholar.google.com/citations?user=OECsdBsAAAAJ&hl=zh-CN
+            icon: ai ai-google-scholar ai-2x
+            offset: 8
+            button_offset: 7
+          - url: https://www.linkedin.com/in/jiachen-lu-02899b27b/
             icon: fab fa-linkedin-in
             offset: 0
             button_offset: 0
