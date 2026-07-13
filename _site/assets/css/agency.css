@@ -214,6 +214,17 @@ img::-moz-selection {
   color: #7f2b18;
 }
 
+.resource-btn-youtube {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+}
+.resource-btn-youtube:hover, .resource-btn-youtube:focus {
+  background-color: #922b21;
+  border-color: #922b21;
+  color: #fff;
+}
+
 @media (max-width: 575px) {
   .resource-slides {
     width: 100%;

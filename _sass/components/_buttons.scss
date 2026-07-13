@@ -162,6 +162,19 @@
   }
 }
 
+.resource-btn-youtube {
+  background-color: #c0392b;
+  border-color: #c0392b;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: #922b21;
+    border-color: #922b21;
+    color: $white;
+  }
+}
+
 @media (max-width: 575px) {
   .resource-slides {
     width: 100%;

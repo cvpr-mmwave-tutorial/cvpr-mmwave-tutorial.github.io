@@ -52,6 +52,13 @@
         </div>
       </div>
       {% endif %}
+
+      {% if resources.youtube and resources.youtube != "" %}
+      <a class="resource-btn resource-btn-youtube" href="{{ resources.youtube }}" target="_blank" rel="noopener noreferrer">
+        <span class="resource-btn-icon" aria-hidden="true"><i class="fab fa-youtube"></i></span>
+        <span class="resource-btn-label">YouTube</span>
+      </a>
+      {% endif %}
     </div>
   </div>
 </section>

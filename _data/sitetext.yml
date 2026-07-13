@@ -26,6 +26,7 @@ en: &DEFAULT_EN
       slides:
         pdf: "assets/slides/CVPR_Tutorial.pdf"
         pptx: "assets/slides/CVPR_Tutorial_Compressed.pptx"
+      youtube: "https://youtu.be/iNh4LRrXfsc"
 
 
   timeline:
